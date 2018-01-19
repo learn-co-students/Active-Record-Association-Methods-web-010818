@@ -8,3 +8,8 @@ require 'sinatra/activerecord/rake'
 task :console do
   Pry.start
 end
+
+task :seed_console do
+  ruby db/seeds.rb
+  Pry.start
+end
